@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<title>Bomberman</title>
+</head>
+<body>	
+	<div class="main-menu " id="mainMenu">
+		<div class="start-menu" id="startMenu">
+		<button class="start-btn" id="start">START</button>
+			<div class="restart-menu" id="restartMenu">
+				<p>GAME OVER</p>
+				<div class="score-storage" id="scoreStorage"></div>	
+				<div class="score" id="displayScore"></div>			
+				<div class="btncontainer">
+					<button class="restart-btn" id="restartBtn">RESTART</button>
+					<button class="cancel-btn" id="cancelBtn">CANCEL</button>					
+					<button class="clear-btn" id="clearScoreBtn">RESET SCORE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		 	<button id="soundBtn" class="soundBtn"></button>
+    	<div id="displayCoins" class ='displayCoins'></div>
+    	<div id="displayLevel" class ='displayLevel'></div>
+    	<div id="displayTime" class="displayTime"></div>
+  </div>
+	<div class="wrapper">		
+		<div id="field" class="field">	
+			<div class="player" id="id_player"></div>
+			<div class="bomb" id="bombId"></div>
+			
+			 <div class="vzryv-horizontal" id="id_vzryv_horiz"></div>
+		   <div class="vzryv-vertical" id="id_vzryv_vert"></div>
+		</div>
+		<audio id = "bombSound">
+        <source src="audio/bomb.mp3"></source>
+        <source src="audio/bomb.ogg"></source>
+    </audio>
+    <audio id = "gameMusic" loop>
+        <source src="audio/game.mp3"></source>
+        <source src="audio/game.ogg"></source>
+    </audio>       
+  </div>  
+	<script src="script.js" ></script>
+</body>
+</html>
