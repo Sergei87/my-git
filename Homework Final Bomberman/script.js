@@ -1,7 +1,7 @@
 
 var player;
 var stones; 
-var field = document.getElementById('field');; 
+var field = document.getElementById('field');
 var cents;
 var columns  = [];;
 var bombTimer ;
@@ -336,11 +336,11 @@ function playAudio() {
 		} 
 }
 function clearLevel() {
-	var a = document.querySelectorAll('.stone'); //если поставить getElementsByClassName не работает??
+	var a = document.querySelectorAll('.stone'); 
 	for (var i = 0; i < a.length; i++) {
 		field.removeChild(a[i]);
 	}
-	a = document.querySelectorAll('.coin'); //если поставить getElementsByClassName не работает??
+	a = document.querySelectorAll('.coin'); 
 	for (var i = 0; i < a.length; i++) {
 		field.removeChild(a[i]);
 	}
