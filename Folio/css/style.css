@@ -1,0 +1,277 @@
+ @font-face {
+    font-family: Ostrih Sans Black; /* Гарнитура шрифта */
+    src: local(ostrich-black), url(../fonts/ostrich-black.ttf); 
+ }
+@font-face {
+    font-family: HelveticaNeue Italic; /* Гарнитура шрифта */
+    src: local(helveticaneuecyr-italic), url(../fonts/helveticaneuecyr-italic.otf); 
+ }
+@font-face {
+    font-family: HelveticaNeue Regular; /* Гарнитура шрифта */
+    src: local(HelveticaNeue-Regular), url(../fonts/HelveticaNeue.ttf); 
+ }
+ @font-face {
+    font-family: HelveticaNeue Medium; /* Гарнитура шрифта */
+    src: local(HelveticaNeue-Regular), url(../fonts/helveticaneuecyr-medium.otf); 
+ }
+ @font-face {
+    font-family: HelveticaNeue LightItalic; /* Гарнитура шрифта */
+    src: local(HelveticaNeue-Regular), url(../fonts/HelveticaNeueCyr-LightItalic.otf); 
+ }
+ html,
+ body {
+ 	width: 100%;
+ 	height: 100%;	
+  background-color: lightgray;
+ }
+.wrapper{
+	position: relative;
+	width: 100%;
+	height: auto;
+	//background-color: lightgreen;	
+	//background-image: url('../img/bg.jpg'); 
+	//background-repeat: no-repeat;
+	//background-position: 50% 100%;
+	//background-size: cover;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container {
+ 	position: absolute;
+	width: 78.33%;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto;
+	border: 1px solid red;
+	z-index: 10;
+}
+.header {
+		float: left;
+}
+.header__logo	{
+	width: 220px;
+	height: 148px;
+	background-color: rgba(252, 252, 249, 0.95);
+	background-image: url('../img/logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+.header__second-logo {
+	width: 131px;
+	height: 26px;
+	margin-top: 100px;
+	text-align: center;	
+	padding: 10px 0;
+	line-height: 30px;
+	font-family: Ostrih Sans Black, sans;
+	font-size: 30px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	color:  rgb(252, 252, 249);
+	background-color: #717070;
+	opacity: 0.9;
+
+}
+.header__third-logo {
+	width: 271px;
+	height: 26px;
+	padding: 10px 0;
+	font-family: HelveticaNeue Italic, sans;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;	
+	vertical-align: middle;
+	color: #717070;
+	background-color:  rgba(252, 252, 249, 0.95);
+}
+.slideshow-bar {
+	padding-top: 22px;
+	width: 188px;
+	height: 100%;
+	background-color: rgba(252, 252, 249, 0.95);
+	float: right;
+	overflow: hidden;
+	z-index: 30;
+} 
+.slideshow-bar__slider {
+    width: 160px;
+    margin: 0 auto;
+    /* height: 100%; */    
+}
+.slideshow-bar__slider .slides {
+		//transform: translate3d(0px, -126px, 0px) !important;
+		background: none;
+    width: 100% !important;
+}
+.slideshow-bar__slider .slides>li {
+   	margin-bottom: 15px;
+   	float: none !important;
+   	overflow: hidden;
+   	width: 160px;
+   	background: #000;
+}
+.slideshow-bar__slider  .flex-viewport { 
+	height: 100% !important;
+ }
+.slideshow-bar__slider  .flex-active-slide img { 
+		opacity: 1;
+ }
+/* .slideshow-bar__item {
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	width: 160px;
+	height: 126px;
+	margin: 0 auto 15px;
+	z-index: 20;
+} */
+.slideshow-bar__tools {
+	width: 160px;
+	margin: 0 auto 18px;
+}
+.slideshow-bar__play {
+	float: left;
+}
+.slideshow-bar__counter {
+	float: right;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	background-color: rgba(252, 252, 249, 0.95);
+	z-index: 10;	
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.menu {
+	float: left;
+	font-size: 0px;
+	margin-top: 15px;
+}
+.menu__item {
+	position: relative;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 15px;
+	font-family: Ostrih Sans Black, sans;
+	font-size: 18px;
+	//vertical-align: middle;
+	text-decoration: none;
+	color: #717070; 
+}	
+
+.menu__link {
+	text-decoration: none;
+	color: #717070;
+}
+.active-link {
+	color: #86b11e;
+}
+.active-link::before {	
+	content: '';
+  border: 13px solid transparent;	
+	border-bottom: 13px solid rgba(252, 252, 249, 0.95);	
+	position: absolute;
+	top: -33px;
+	left: 50%;
+	transform: translateX(-50%);
+	//display: none;
+}
+.load-line {
+	width: 50%;
+	height: 10px;
+	position: absolute;
+	bottom: 45px;
+	background-color: #717070;
+	opacity: 0.5;
+	z-index: 10;
+}
+.copyright {
+	float: right;
+	font-size: 10px;
+	color: #717070;
+	font-family: HelveticaNeue Regular, sans;
+	margin-top: 15px;
+	font-weight: bold;
+}
+
+.content-container {
+	display: none;
+	position: absolute;
+	font-family: HelveticaNeue Regular, sans;
+	color: #717070; 
+	bottom: 45px;
+	width: 632px;
+	height: 734px;
+	padding: 34px;
+	background-color: rgba(252, 252, 249, 0.90);
+}
+.close-button {
+	content: '';
+	width: 43px;
+	height: 32px;
+	background-color: rgba(252, 252, 249, 0.90);
+	position: absolute;
+	top: -32px;
+	right: 0;
+}
+.close-button__arow {
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 25%;
+	border: 3px solid #717070;
+	border-top: transparent;
+	border-right: transparent; 
+	width: 10px;
+	height: 9.5px;
+	transform: rotate(-45deg);
+
+}
+.content-container__title {
+	font-family: Ostrih Sans Black, sans;
+	font-size: 24px;
+	text-transform: uppercase;
+	border-left: 3px solid #86b11e;
+	padding-left: 10px;
+	line-height: 24px;
+	height: 21px;
+	margin-bottom: 35px;
+}
+
+.content-container__intro  {
+	margin-bottom: 25px;
+	font-family: HelveticaNeue Medium, sans;
+
+}
+.content-container__image {
+	float: left;
+	border: 1px solid #717070;
+	padding: 2px; 
+	border-radius: 2px;
+	margin-right: 22px;
+}
+.content-container__main {
+	margin-bottom: 25px;
+}
+.content-container__end {
+	font-family: 'HelveticaNeue LightItalic', serif;
+	float: right;
+	//width: 600px;
+	margin-left: 60px;
+
+}
+
+.about {
+	display: none;
+}
