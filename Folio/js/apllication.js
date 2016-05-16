@@ -1,16 +1,20 @@
+
+
 $(window).load(function() {
   // The slider being synced must be initialized first
  $('#carousel').flexslider({
-        animation: "",
+        animation: "slide",
         controlNav: false,
         animationLoop: false,
-        slideshow: true,
+        slideshow: false,
         itemWidth: 160,
-        itemMargin: 0,
+        itemMargin: -19,
         direction: "vertical",
-        directionNav: false, 
-        asNavFor: '#slider'
-         
+        directionNav: false,
+        move:1,
+        easing: 'easeInElastic', 
+        asNavFor: '#slider',
+                   
       });
  
   $('#slider').flexslider({
